@@ -2,7 +2,7 @@ import { approveReview, unapproveReview } from '../../../lib/approvals.js';
 
 export default async function handler(req, res) {
   // Allow CORS for your frontend
-  res.setHeader('Access-Control-Allow-Origin', 'https://flex-frontend-dun.vercel.app/');
+  res.setHeader('Access-Control-Allow-Origin', 'https://flex-frontend-five.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'POST, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
