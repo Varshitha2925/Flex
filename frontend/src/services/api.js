@@ -23,13 +23,13 @@ export async function fetchHostawayReviews() {
 }
 
 export async function approveReview(id) {
-  const res = await fetch(`${BASE_URL}/api/reviews/approvals/${id}`, { method: 'POST' });
+  const res = await fetch(`${BASE_URL}/api/approvals/${id}`, { method: 'POST' });
   if (!res.ok) throw new Error('Failed to approve review');
   return res.json();
 }
 
 export async function unapproveReview(id) {
-  const res = await fetch(`${BASE_URL}/api/reviews/approvals/${id}`, { method: 'DELETE' });
+  const res = await fetch(`${BASE_URL}/api/approvals/${id}`, { method: 'DELETE' });
   if (!res.ok) throw new Error('Failed to unapprove review');
   return res.json();
 }
