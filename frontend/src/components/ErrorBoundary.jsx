@@ -9,7 +9,6 @@ export default class ErrorBoundary extends React.Component {
     return { hasError: true, error };
   }
   componentDidCatch(error, info) {
-    // eslint-disable-next-line no-console
     console.error('ErrorBoundary caught an error', error, info);
   }
   render() {
